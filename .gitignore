@@ -1,0 +1,10 @@
+# Build output staged by CI
+_site/
+
+# Dependencies (no aplican: sitio pre-compilado, pero por las dudas)
+node_modules/
+
+# Logs y temporales
+*.log
+.DS_Store
+Thumbs.db
