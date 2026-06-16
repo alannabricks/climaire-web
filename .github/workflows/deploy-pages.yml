@@ -28,7 +28,7 @@ jobs:
       - name: Stage static site
         run: |
           mkdir -p _site
-          cp index.html favicon.svg _site/
+          cp index.html _site/
           cp -r assets _site/
           touch _site/.nojekyll
 
