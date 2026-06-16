@@ -33,6 +33,10 @@ jobs:
           touch _site/.nojekyll
 
       - uses: actions/configure-pages@v5
+        with:
+          # Habilita Pages (build_type=workflow) con el GITHUB_TOKEN del workflow,
+          # así no hace falta activarlo manualmente en Settings → Pages.
+          enablement: true
 
       - uses: actions/upload-pages-artifact@v3
         with:
