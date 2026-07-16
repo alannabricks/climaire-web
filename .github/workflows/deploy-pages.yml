@@ -28,9 +28,8 @@ jobs:
       - name: Stage static site
         run: |
           mkdir -p _site
-          cp index.html versiones.html _site/
+          cp index.html _site/
           cp -r assets _site/
-          for d in v1 v2 v3 v4 v5 v6 v7 v8 v9 v10; do cp -r "$d" "_site/$d"; done
           touch _site/.nojekyll
 
       - uses: actions/configure-pages@v5
